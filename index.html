@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>CodePlayer</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="css/codemirror.css">
+	<link rel="stylesheet" href="codemirror/theme/ambiance.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="js/codemirror.js"></script>
+	<script src="codemirror/addon/edit/closetag.js"></script>
+	<script src="codemirror/addon/fold/xml-fold.js"></script>
+	<script src="codemirror/addon/edit/closebrackets.js"></script>
+	<script src="codemirror/mode/javascript/javascript.js"></script>
+	<script src="codemirror/mode/css/css.js"></script>
+	<script src="codemirror/mode/xml/xml.js"></script>	
+	<script src="js/script.js"></script>
+</head>
+<body> 
+	<div id="pagewrap">
+		<div id="header">
+			<h2><span>&lt;</span>Code Player<span>><span></h2>
+			<a id="hide" href="#" data-target="#tabs-min" data-shown-text="Hide" data-hidden-text="Show" title="Hide the editor">Hide</a>
+			<a id="result" href="#">Output</a>
+		</div>
+
+		<div id="flexbox1">
+			<div id="tabs-min">
+				<ul>
+					<li><a href="#tabs-1">HTML</a></li>
+					<li><a href="#tabs-2">CSS</a></li>
+					<li><a href="#tabs-3">Javascript</a></li>
+					<img id="play" src="img/play.png" title="View the output"></img>
+					<img id="reset" src="img/reset.png" title="Reset code"></img>
+				</ul>
+				<div id="tabs-1">
+					<textarea id="htmltext"></textarea>
+				</div>
+				<div id="tabs-2">
+					<textarea id="csstext"></textarea>
+				</div>
+				<div id="tabs-3">
+					<textarea id="jstext"></textarea>
+				</div>
+			</div>
+			
+			<div id="resultbox">
+				<iframe id="resultframe"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
